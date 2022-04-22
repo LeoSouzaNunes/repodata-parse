@@ -5,31 +5,7 @@ import { parse } from "json2csv";
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
 
-const fields = [
-    "id",
-    "topic",
-    "name",
-    "owner",
-    "ownerType",
-    "fullName",
-    "description",
-    "ogImage",
-    "license",
-    "isArchived",
-    "isForked",
-    "size",
-    "language",
-    "tags",
-    "openIssues",
-    "forks",
-    "stars",
-    "watchers",
-    "hasWiki",
-    "hasPages",
-    "hasSponsorship",
-    "createdAt",
-    "updatedAt",
-];
+const fields = ["name", "owner", "description", "topic", "language", "stars"];
 
 const opts = { fields };
 
